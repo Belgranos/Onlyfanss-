@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlyFanss | Creator Marketplace</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101018;
+      color: white;
+    }
+    header {
+      padding: 18px;
+      background: #1c1c29;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { color: #ff4f9a; font-size: 24px; font-weight: bold; }
+    button {
+      background: #ff4f9a;
+      color: white;
+      padding: 12px 16px;
+      border: 0;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 55px 18px;
+      background: linear-gradient(135deg, #381c42, #101018);
+    }
+    .hero h1 { font-size: 34px; }
+    .hero p { color: #ded5e2; line-height: 1.7; }
+    main { padding: 24px 16px; max-width: 950px; margin: auto; }
+    .creators {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #20202d;
+      border: 1px solid #393949;
+      border-radius: 14px;
+      padding: 20px;
+    }
+    .avatar {
+      width: 75px;
+      height: 75px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #402844;
+      font-size: 32px;
+    }
+    .card p { color: #d0c7d6; line-height: 1.5; }
+    .price { color: #ff8abd; font-weight: bold; }
+    footer { padding: 25px; text-align: center; color: #aaa; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">OnlyFanss</div>
+    <button onclick="alert('Creator registration is coming soon!')">Join Now</button>
+  </header>
+
+  <section class="hero">
+    <h1>Your Content. Your Fans.</h1>
+    <p>Discover creators, explore exclusive content, and support your favourites.</p>
+    <button onclick="document.getElementById('creators').scrollIntoView({behavior:'smooth'})">
+      Explore Creators
+    </button>
+  </section>
+
+  <main>
+    <h2>Discover Creators</h2>
+    <p>Meet creators and explore their profiles.</p>
+
+    <div class="creators" id="creators">
+      <div class="card">
+        <div class="avatar">✨</div>
+        <h3>Creator One</h3>
+        <p>Photos, videos, and personal updates.</p>
+        <p class="price">From KSh 100</p>
+        <button onclick="alert('Creator profiles will be added soon!')">View Profile</button>
+      </div>
+      <div class="card">
+        <div class="avatar">💖</div>
+        <h3>Creator Two</h3>
+        <p>Behind-the-scenes content and special moments.</p>
+        <p class="price">From KSh 150</p>
+        <button onclick="alert('Creator profiles will be added soon!')">View Profile</button>
+      </div>
+      <div class="card">
+        <div class="avatar">🌟</div>
+        <h3>Creator Three</h3>
+        <p>Fresh content from your favourite creators.</p>
+        <p class="price">From KSh 200</p>
+        <button onclick="alert('Creator profiles will be added soon!')">View Profile</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>OnlyFanss © 2026</p>
+    <p>Adults aged 18 and above only.</p>
+  </footer>
+</body>
+</html>
